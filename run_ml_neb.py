@@ -43,7 +43,7 @@ pseudopotentials = {
 qe_input_data = {
     'control': {'calculation':'scf',
                 'prefix':'qe_calc',
-                'pseudo_dir': '/home/minjae/qe-7.4.1/pseudo/',
+                'pseudo_dir': '/MLNEB/pseudo/',
                 'outdir':'./out/',
                 'tstress':True,
                 'tprnfor':True},
@@ -132,4 +132,5 @@ if __name__ == "__main__":
         # 1. 구조 최적화 실행
         #optimize_endpoints()
         # 2. ML-NEB 계산 실행
+
         run_main_mlneb()
