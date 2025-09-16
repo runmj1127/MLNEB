@@ -40,7 +40,7 @@ pseudopotentials = {
 qe_input_data = {
     'control': {'calculation':'scf',
                 'prefix':'qe_calc',
-                'pseudo_dir': '/home/minjae/qe-7.4.1/pseudo/',
+                'pseudo_dir': '/root/MLNEB/pseudo/',
                 'outdir':'./out/',
                 'tstress':True,
                 'tprnfor':True},
@@ -99,3 +99,4 @@ def run_main_mlneb():
 # ===========================================================================
 if __name__ == "__main__":
     run_main_mlneb()
+
