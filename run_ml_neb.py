@@ -61,7 +61,7 @@ ase_calculator = Espresso(
     pseudopotentials=pseudopotentials,
     input_data=qe_input_data,
     kpts=(2, 1, 1),
-    command='mpirun -np 12 pw.x -in PREFIX.pwi > PREFIX.pwo'
+    command='mpirun -np 16 pw.x -in PREFIX.pwi > PREFIX.pwo'
 )
 
 # ===========================================================================
@@ -134,3 +134,4 @@ if __name__ == "__main__":
         # 2. ML-NEB 계산 실행
 
         run_main_mlneb()
+
